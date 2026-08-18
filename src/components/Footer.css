@@ -1,0 +1,10 @@
+/* client/src/components/Footer.css */
+.footer {
+  text-align: center;
+  padding: 20px;
+  margin-top: auto; /* Push footer to bottom */
+  background: rgba(255, 255, 255, 0.02);
+  border-top: 1px solid rgba(255, 255, 255, 0.05);
+  font-size: 14px;
+  color: rgba(240, 246, 252, 0.6);
+}

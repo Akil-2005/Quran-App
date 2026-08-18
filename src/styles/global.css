@@ -1,0 +1,81 @@
+/* client/src/styles/global.css */
+
+:root {
+  --bg-color: #0d1117;
+  --text-color: #f0f6fc;
+  --accent-color: #10b981; /* Soft Islamic Green */
+  --accent-hover: #059669;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-shadow: rgba(0, 0, 0, 0.37);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Glassmorphism Card Style Utility */
+.glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
+  box-shadow: 0 8px 32px 0 var(--glass-shadow);
+  padding: 20px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(16, 185, 129, 0.4); /* Green tint on hover */
+}
+
+/* Common Inputs and Buttons */
+input, textarea {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid var(--glass-border);
+  color: var(--text-color);
+  border-radius: 8px;
+  padding: 12px;
+  font-size: 16px;
+  outline: none;
+  transition: all 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: var(--accent-color);
+  background: rgba(255, 255, 255, 0.12);
+}
+
+button {
+  background-color: var(--accent-color);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 24px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  background-color: var(--accent-hover);
+  transform: scale(1.02);
+}
+
+button:active {
+  transform: scale(0.98);
+}

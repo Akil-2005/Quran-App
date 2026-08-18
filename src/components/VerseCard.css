@@ -1,0 +1,103 @@
+/* client/src/components/VerseCard.css */
+.verse-card {
+  max-width: 700px;
+  margin: 20px auto;
+  text-align: left;
+}
+
+.verse-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 12px;
+  margin-bottom: 20px;
+}
+
+.verse-reference {
+  color: var(--accent-color);
+  font-size: 16px;
+}
+
+.topic-badge {
+  background: rgba(16, 185, 129, 0.2);
+  color: var(--accent-color);
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.arabic-text {
+  font-family: 'Traditional Arabic', 'Amiri', serif;
+  font-size: 28px;
+  text-align: right;
+  direction: rtl;
+  line-height: 1.8;
+  margin-bottom: 25px;
+  color: #fff;
+}
+
+.translation-section {
+  margin-bottom: 15px;
+}
+
+.translation-title {
+  font-size: 12px;
+  color: var(--accent-color);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+.translation-text {
+  font-size: 16px;
+  line-height: 1.5;
+  opacity: 0.9;
+}
+
+.tamil-title {
+  color: #34d399;
+}
+
+.tafsir-section {
+  background: rgba(255, 255, 255, 0.03);
+  padding: 12px;
+  border-radius: 8px;
+  border-left: 3px solid var(--accent-color);
+  margin-top: 20px;
+}
+
+.tafsir-title {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.tafsir-text {
+  font-size: 15px;
+  font-style: italic;
+  opacity: 0.85;
+}
+
+.verse-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  justify-content: flex-end;
+}
+
+.action-btn {
+  padding: 8px 16px;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-color);
+}
+
+.action-btn:hover {
+  background: var(--accent-color);
+  color: white;
+}
